@@ -1,17 +1,19 @@
 #(C)Tsubasa Kato 2020/11/7
 #Random Number Generator 
-$counter = 0;
+$counter = 1;
 @number = 0;
-#decide upper limit of random numbers generated here (10000 in this case)
-while ($counter <= 10000){
+$limit = 10000;
+$upper_limit = $limit + 1;
+#decide upper limit of how many random numbers generated:
+while ($counter <= $upper_limit){
 	@number[$counter] = $random_number;
-	$random_number = int(rand(10));	
+	$random_number = int(rand(10));
+	
 	print "$counter: $random_number\n";
 	$counter = $counter+1;
 
-	if ($counter > 0){
-		$both = $both.@number[$counter - 1];
-	}
+	$both = $both.@number[$counter - 1];
+	
 	
 }
 #prints all numbers made randomly.
@@ -28,6 +30,3 @@ while ($both =~ m/(\d)/g) {
 print "The count each digit appears is: \n";
 print "'$_' - $counts{$_}\n" for sort keys %counts;
 print "The sum of all the totals is $sum\n";
-
-
-
