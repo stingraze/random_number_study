@@ -1,14 +1,13 @@
 #(C)Tsubasa Kato 2020/11/7
+#Last Updated on 2020/11/8
 #Random Number Generator 
 $counter = 1;
 @number = 0;
 $limit = 10000;
-$upper_limit = $limit + 1;
 #decide upper limit of how many random numbers generated:
-while ($counter <= $upper_limit){
-	@number[$counter] = $random_number;
+while ($counter <= $limit){
 	$random_number = int(rand(10));
-	
+	@number[$counter] = $random_number;
 	print "$counter: $random_number\n";
 	$counter = $counter+1;
 
@@ -16,8 +15,11 @@ while ($counter <= $upper_limit){
 	
 	
 }
+
 #prints all numbers made randomly.
 print $both;
+print "last number:";
+print @number[$counter];
 #code used from: https://stackoverflow.com/questions/12948136/digit-occurence-of-a-number-in-perl
 my (%counts, $sum);
 
