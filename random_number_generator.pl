@@ -18,7 +18,6 @@ while ($counter <= $limit){
 
 #prints all numbers made randomly.
 print $both;
-print "last number:";
 print @number[$counter];
 #code used from: https://stackoverflow.com/questions/12948136/digit-occurence-of-a-number-in-perl
 my (%counts, $sum);
