@@ -1,5 +1,5 @@
 #(C)Tsubasa Kato 2020/11/7
-#Last Updated on 2020/11/8
+#Last Updated on 2020/12/29
 #Random Number Generator 
 $counter = 1;
 @number = 0;
@@ -28,6 +28,6 @@ while ($both =~ m/(\d)/g) {
     $sum++;
 }
 
-print "The count each digit appears is: \n";
+print "The count each digit appears are: \n";
 print "'$_' - $counts{$_}\n" for sort keys %counts;
 print "The sum of all the totals is $sum\n";
