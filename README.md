@@ -6,5 +6,5 @@ lists each number per try, and outputs all the numbers and the occurrence of eac
 Enjoy!
 
 4/30/2021:
-I've created a new script that hopes to one day learn from random numbers and predict. It it is not able to do so right now, but maybe someday I will find a way! ;-)
+I've created a new script (prediction1.py) that hopes to one day learn from random numbers and predict. It it is not able to do so right now, but maybe someday I will find a way! ;-)
 
