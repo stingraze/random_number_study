@@ -2,8 +2,8 @@
 from random import random
 
 counter = 1
-data = [0]
-data2 = [0]
+data = []
+data2 = []
 position = 0
 
 
