@@ -42,5 +42,12 @@ predict_val2 = data2[predict_test]
 print (str(predict_val) + ": Predict Val #1")
 print (str(predict_val2) + ": Predict Val #2")
 
+
 average = numpy.mean(data)
+median = numpy.median(data)
+
 print (str(average)+ ": Average")
+print (str(median) + ": Median")
+
+avg_minus_median = average - median
+print (str(avg_minus_median)+ ": Average Minus Median")
