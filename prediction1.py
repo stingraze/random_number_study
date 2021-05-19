@@ -1,5 +1,7 @@
-
+#(C)Tsubasa Kato 2021 
+#Last Updated on 5/19/2021
 from random import random
+import numpy
 
 counter = 1
 data = []
@@ -40,4 +42,5 @@ predict_val2 = data2[predict_test]
 print (str(predict_val) + ": Predict Val #1")
 print (str(predict_val2) + ": Predict Val #2")
 
-
+average = numpy.mean(data)
+print (str(average)+ ": Average")
